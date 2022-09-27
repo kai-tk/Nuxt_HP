@@ -12,10 +12,10 @@
       <tbody>
         <tr class="hover bg-white" v-for="article in reverseArticles" :key="articles.id">
 
-          <td class="pt-6 border-solid border-r-2 text-center h-1">
+          <td class="bg-white pt-6 border-solid border-r-2 text-center h-1">
             <a class="link link-hover block h-full" :href="article.url">{{article.headword}}</a>
           </td>
-          <td class="border-solid border-r-2">
+          <td class="bg-white border-solid border-r-2">
             <div v-if="article.state==='found'">
               <textarea v-if="article.detail" class="textarea resize-none" :id="textId(article)" disabled>{{article.about}}</textarea>
               <p v-else class="overflow-x-hidden text-ellipsis">{{article.about}}</p>
@@ -27,7 +27,7 @@
               <p><span class="text-red-500">Not Found</span> (記事が存在しません)</p>
             </div>
           </td>
-          <td class="text-center align-top">
+          <td class="bg-white text-center align-top">
             <button v-if="article.state==='found'" class="btn btn-outline btn-info" @click="showInfo(article)">Info</button>
           </td>
         </tr>
