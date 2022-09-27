@@ -81,8 +81,8 @@
         this.ClearStatus()
 
         if(!this.validInput){
-          this.error=true
           this.$refs.first.focus()
+          this.error=true
           return
         }
 
