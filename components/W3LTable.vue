@@ -10,7 +10,7 @@
       </thead>
 
       <tbody>
-        <tr class="hover" v-for="article in reverseArticles" :key="articles.id">
+        <tr class="hover bg-white" v-for="article in reverseArticles" :key="articles.id">
 
           <td class="pt-6 border-solid border-r-2 text-center h-1">
             <a class="link link-hover block h-full" :href="article.url">{{article.headword}}</a>
